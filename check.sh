@@ -3,5 +3,6 @@
 if [ "$1" == "supersecret-dev-1" ]; then
     echo "CORRECT"
 else
-    echo "INCORRECT"
+    echo "INCORRECT" >&2
+    exit 1
 fi
